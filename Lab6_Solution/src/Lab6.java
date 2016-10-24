@@ -7,23 +7,31 @@
  */
 public class Lab6 {
 
-    /** Returns the result of comparing 2 big numbers.
-     *  Returns true if the numbers are equal.
+    /**
+     *  Problem 1:
+     *  Returns the result of comparing 2 big numbers.
+     *  If a == b, returns 0.
+     *  If a < b, returns -1.
+     *  If a > b, returns 1.
      *  @param a    a char array consists of '0'..'9'
      *  @param b    a char array consists of '0'..'9'
      * */
-    public static boolean compare(char[] a, char[] b) {
+    public static int compare(char[] a, char[] b) {
         // your code here.
 
-        return false;
+        return 0;
     }
 
-    /** Returns the result of comparing the sum of 2 integer arrays.
-     *  Returns true if the 2 sums are equal.
+    /**
+     *  Problem 2:
+     *  Returns the result of comparing the sum of 2 integer arrays.
+     *  If a == b, returns 0.
+     *  If a < b, returns -1.
+     *  If a > b, returns 1.
      *  @param a    an integer array represents the size of a hotel a.
      *  @param b    an integer array represents the size of a hotel b.
      * */
-    public static boolean compare(int[][] a, int[][] b) {
+    public static int compare(int[][] a, int[][] b) {
         int sum_of_a = 0;
         int sum_of_b = 0;
 
@@ -32,6 +40,6 @@ public class Lab6 {
 
         // your code here.
 
-        return false;
+        return 0;
     }
 }

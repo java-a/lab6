@@ -18,7 +18,8 @@ public class TestLab6 {
             char[] c = {'6', '6', '6'};
 
             Method m = lab6.getMethod("compare", new Class[]{char[].class, char[].class});
-            if ((boolean) m.invoke(lab6, a, b) && (boolean) m.invoke(lab6, b, c) && !(boolean) m.invoke(lab6, c, a))
+            if ((int) m.invoke(lab6, a, b) > 0 && (int) m.invoke(lab6, b, c) > 0 && (int) m.invoke(lab6, c, a) < 0
+                    && (int) m.invoke(lab6, a, a) == 0)
                 System.out.println("Congratulations! You solved problem 1.");
             else
                 System.out.println("Oops! Something wrong with your problem 1.");
@@ -29,7 +30,8 @@ public class TestLab6 {
             int[][] cc = {{1, 2, 3, 4, 4, 3, 2, 1}};
 
             m = lab6.getMethod("compare", new Class[]{int[][].class, int[][].class});
-            if ((boolean) m.invoke(lab6, aa, bb) && !(boolean) m.invoke(lab6, aa, cc) && !(boolean) m.invoke(lab6, bb, cc))
+            if ((int) m.invoke(lab6, aa, bb) > 0 && (int) m.invoke(lab6, aa, cc) < 0
+                    && (int) m.invoke(lab6, bb, cc) < 0 && (int) m.invoke(lab6, aa, aa ) == 0)
                 System.out.println("Congratulations! You solved problem 2.");
             else
                 System.out.println("Oops! Something wrong with your problem 2.");
