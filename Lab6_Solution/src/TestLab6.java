@@ -16,10 +16,12 @@ public class TestLab6 {
             char[] a = {'1', '2', '3', '4', '5', '6'};
             char[] b = {'1', '2', '2', '4', '5', '6'};
             char[] c = {'6', '6', '6'};
+            char[] d = {'0', '7', '6', '6'};
+            char[] e = {'0', '6', '6', '6'};
 
             Method m = lab6.getMethod("compare", new Class[]{char[].class, char[].class});
             if ((int) m.invoke(lab6, a, b) > 0 && (int) m.invoke(lab6, b, c) > 0 && (int) m.invoke(lab6, c, a) < 0
-                    && (int) m.invoke(lab6, a, a) == 0)
+                    && (int) m.invoke(lab6, c, e) == 0 && (int) m.invoke(lab6, c, d) < 0)
                 System.out.println("Congratulations! You solved problem 1.");
             else
                 System.out.println("Oops! Something wrong with your problem 1.");
