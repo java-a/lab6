@@ -10,6 +10,7 @@
 1. 请先从 GitHub 下载作业，然后使用 IntelliJ 打开 Lab6_Solution 工程。
 2. 在本次 lab 中，需要你在 `Lab6` 这个类中完成 `compare` 方法的编写。
 3. 运行 `TestLab6` ，你将得到正误的评判。给 TA 当面检查后，请上传至 FTP 本次 lab 的文件夹下。
+4. 代码请上传到FTP的/classes/16/161 程序设计A （戴开宇）/WORK_UPLOAD/lab6 路径下，Lab5的Code Review文档请上传到FTP的/classes/16/161 程序设计A （戴开宇）/WORK_UPLOAD/Code Review/lab5路径。
 
 ## Problem 0: 回顾与思考
 
